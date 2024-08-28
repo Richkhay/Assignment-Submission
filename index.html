@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .left-column {
+            flex: 1;
+            text-align: center;
+        }
+        .left-column img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 50%;
+        }
+        .left-column h2 {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .right-column {
+            flex: 2;
+        }
+        .scroll-up {
+            text-align: right;
+            margin-top: 20px;
+        }
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+        footer li {
+            list-style: none;
+        }
+
+        /* Responsive design */
+        @media(min-width: 768px) {
+            .content {
+                flex-direction: row;
+            }
+            .left-column img {
+                max-width: 100%;
+                width: 300px;
+            }
+        }
+
+        @media(min-width: 1200px) {
+            .container {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body id="top">
+
+<div class="container">
+    <div class="content">
+        <div class="left-column">
+            <img src="Media/Images/image2.jpg" alt="My profile picture">
+            <h2>About Me</h2>
+        </div>
+        <div class="right-column">
+            <h1>About Me</h1>
+            <p><strong>ALT SCHOOL ID:</strong> Student ID: ALT/SOE/024/0429.</p>
+            <p><strong>Biography:</strong> Kayode Osobu is a multifaceted individual who wears several hats - student, digital marketer, and network marketer. Currently, he is pursuing a degree in Computer Science at The Polytechnic, Ibadan. With a passion for technology and innovation, Kayode is driven to excel in his field.</p>
+
+            <h1>Reason for Joining ALT School:</h1>
+            <ol>
+                <li>I joined ALT School to enhance my skills and knowledge in Cloud Engineering.</li>
+                <li>To stay up-to-date with industry trends, and gain practical experience.</li>
+                <li>To use the opportunity to learn from experienced professionals.</li>
+                <li>To collaborate with like-minded individuals.</li>
+            </ol>
+
+            <h1>Goals for the Engineering Program</h1>
+            <ol>
+                <li>Acquire in-depth knowledge: Gain a solid understanding of software engineering principles, Cloud Computing, DevOps, and Software Deployments.</li>
+                <li>Develop practical skills: Master programming languages, such as Python, JavaScript, and HTML/CSS, and learn to apply them in real-world projects.</li>
+                <li>Build a professional network: Connect with fellow students, mentors, and industry professionals to expand my network and opportunities.</li>
+                <li>Launch a successful career: Equip myself with the skills and expertise needed to secure a job in software engineering or start my own tech venture.</li>
+                <li>Stay updated with industry trends: Continuously learn about new technologies, tools, and methodologies to remain competitive in the industry.</li>
+            </ol>
+
+            <p>By achieving these goals, I aim to become a proficient software engineer, capable of making meaningful contributions to the tech industry and driving innovation.</p>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Link -->
+    <div class="scroll-up">
+        <a href="#top">Scroll to Top</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 ALT School</p>
+    <li style="display: inline; margin-right: 10px;"><a href="#top">Scroll to Top</a></li>
+</footer>
+
+</body>
+</html>

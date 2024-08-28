@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 10px 0;
+        text-align: center;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.5em;
+      }
+      .container {
+        padding: 20px;
+      }
+      .bio {
+        margin-bottom: 30px;
+      }
+      .media-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;l
+      }
+
+      .media-container video,
+      .media-container img {
+        max-width: 100%;
+        height: auto;
+      }
+
+
+       
+      @media (min-width: 768px) {
+        .media-container {
+          flex-direction: row;
+          justify-content: space-between;
+        }
+        .media-container img,
+        .media-container video {
+          max-width: 45%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Step Into My World</h1>
+    </header>
+
+    <main class="container">
+
+      <section class="bio">
+        <h2>About Me</h2>
+        <p>
+          Hi! I'm Kayode Osobu, a passionate Technology with a deep love
+          for Cloud Engineering. I specialize in Cloud Security and strive to
+          make a meaningful impact in the world through my work. Welcome to my
+          journey!
+        </p>
+      </section>
+
+      <section class="media-container">
+        <h2>My Visual Story</h2>
+
+        <!-- Responsive Picture Element -->
+        <picture>
+          <source srcset="images/kelvin_large.jpg" media="(min-width: 1024px)" />
+          <source srcset="images/kelvin_medium.jpg" media="(min-width: 768px)" />
+          <source srcset="images/kelvin_small.jpg" media="(max-width: 767px)" />
+          <img src="images/kelvin.jpg" alt="A picture of Ma" />
+        </picture>
+
+        <!-- Additional Media Elements -->
+        <video autoplay muted controls >
+          <source src="videos/hello.mp4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+
+        <audio controls>
+          <source src="audio/Recording.m4a" type="audio/mp3" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+    </div>
+  </body>
+</html>
